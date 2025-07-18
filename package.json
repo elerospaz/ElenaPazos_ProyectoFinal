@@ -1,0 +1,16 @@
+{
+  "name": "elenapazos_proyectofinal",
+  "version": "1.0.0",
+  "description": "Gestión de inventario - Api Rest con Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elena Pazos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
