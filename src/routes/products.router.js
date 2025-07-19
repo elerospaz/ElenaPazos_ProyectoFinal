@@ -14,10 +14,10 @@ import { auth } from "../middlewares/auth.middleware.js";
 router.get("/products", getAllProducts);
 router.get("/products/:id", getProductById);
 
-router.post("/products", auth, createProduct);
+router.post("/products/create", auth, createProduct);
 
 router.put("/products/:id", auth, updateProduct);
 
-router.delete("/products/:id", auth, deleteProduct);
+router.delete("/products/delete/:id", auth, deleteProduct);
 
 export default router;

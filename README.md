@@ -9,14 +9,47 @@ npm install
 
 ## Ejecutar el proyecto
 
-npm run start      o      npm run dev (para desarrollo)
+npm run start
 
 
-## Credenciales login:
-{
-"email":"email@email.com",
-"password":"password"
-}
+## Peticiones con Vercel:
+
+-POST  https://elena-pazos-proyecto-final.vercel.app/api/auth/login  
+Recibe las credenciales de usuario en el cuerpo (body) de la petición y devuelve el Bearer token si son válidas o un error de autenticación en caso contrario
+Credenciales válidas:  {"email":"email@email.com", "password": “password"}
+
+-GET https://elena-pazos-proyecto-final.vercel.app/api/products
+Devuelve todos los productos
+
+-GET https://elena-pazos-proyecto-final.vercel.app/api/products/colocarID
+Devuelve el producto de ID ingresada
+
+-POST https://elena-pazos-proyecto-final.vercel.app/api/products/create  
+Muestra y guarda el producto ingresado en el body (requiere token)
+
+DELETE  https://elena-pazos-proyecto-final.vercel.app/api/products/delete/colocarID 
+Elimina el producto de ID ingresada (requiere token)
+
+
+## Peticiones sin Vercel:
+
+-POST localhost:3000/api/auth/login
+Recibe las credenciales de usuario en el cuerpo (body) de la petición y devuelve el Bearer token si son válidas o un error de autenticación en caso contrario.
+Credenciales válidas:  {"email":"email@email.com", "password": “password"}
+
+-GET localhost:3000/api/products    
+Devuelve todos los productos
+
+-GET localhost:3000/api/products/colocarID
+Devuelve el producto de ID ingresada
+
+-POST localhost:3000/api/products/create  
+Muestra y guarda el producto ingresado en el body (requiere token)
+
+-DELETE  localhost:3000/api/products/delete/colocarID 
+Elimina el producto de ID ingresada (requiere token)
+
+
 
 
 ## Variables de entorno:
@@ -32,15 +65,5 @@ FIREBASE_APP_ID=1:611004746207:web:930d7c1a910b050dae5c6a
 
 JWT_SECRET=S3cr3T0
 
-## url vercel:
-https://elena-pazos-proyecto-final.vercel.app/
 
 
-# Ejecución:
-
-POST: https://elena-pazos-proyecto-final.vercel.app/api/auth/login
-GET: https://elena-pazos-proyecto-final.vercel.app/api/products
-GET:https://elena-pazos-proyecto-final.vercel.app/api/products/colocarID
-
-POST: https://elena-pazos-proyecto-final.vercel.app/api/products/create
-GET: 
