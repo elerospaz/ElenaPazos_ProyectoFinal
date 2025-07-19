@@ -30,4 +30,17 @@ FIREBASE_STORAGE_BUCKET=gestion-de-inventario-api-rest.firebasestorage.app
 FIREBASE_MESSAGING_SENDER_ID=611004746207
 FIREBASE_APP_ID=1:611004746207:web:930d7c1a910b050dae5c6a
 
-JWT_SECRET=S3CR3T
+JWT_SECRET=S3cr3T0
+
+## url vercel:
+https://elena-pazos-proyecto-final.vercel.app/
+
+
+# Ejecución:
+
+POST: https://elena-pazos-proyecto-final.vercel.app/api/auth/login
+GET: https://elena-pazos-proyecto-final.vercel.app/api/products
+GET:https://elena-pazos-proyecto-final.vercel.app/api/products/colocarID
+
+POST: https://elena-pazos-proyecto-final.vercel.app/api/products/create
+GET: 
